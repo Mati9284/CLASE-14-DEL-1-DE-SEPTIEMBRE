@@ -55,13 +55,18 @@ body {
     /* TITIULO PRINCIPAL */
 
         #titulo_principal {
+            width: 350px;
             font-size: 50px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
     /* BUSCADOR */
 
         #menu input[type="text"] {
+            animation: fadeIn 0.3s;
             width: 250px; 
             height: 30px;
             border-radius: 10px;
@@ -73,12 +78,13 @@ body {
             border: 1px var(--white) solid;
             opacity: 0.7;
         }
+    
+    /* MENU HAMBURGUESA */
 
-        #menu input[type="text"] {
-            animation: fadeOut 0.3s;
-            border: 1px var(--white) solid;
-            opacity: 0.7;
-        }
+    #menu_hamburguesa {
+        width: 75px;
+        height: 75px;
+    }
 
 /* MAIN */
 
