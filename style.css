@@ -1,0 +1,127 @@
+:root {
+    --red: rgb(210, 52, 52);
+    --white: rgb(255, 255, 255);
+    --black: rgba(0, 0, 0, 0.4);
+    --green: rgb(0, 97, 0);
+    --gray: rgb(185, 185, 185);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px blue solid !important; */
+}
+
+/* SELECTORES POR PALABRA CLAVE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+/* HEADER */
+
+    #menu {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: var(--red);
+    }
+
+    /* LOGO */
+
+        #logo {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo img {
+            width: 100%;
+            height: 100%;
+            border: 5px var(--gray) solid;
+            border-radius: 50%;
+            background-color: var(--white);
+        }
+    
+    /* TITIULO PRINCIPAL */
+
+        #titulo_principal {
+            font-size: 50px;
+            text-align: center;
+        }
+
+    /* BUSCADOR */
+
+        #menu input[type="text"] {
+            width: 250px; 
+            height: 30px;
+            border-radius: 10px;
+            border: 1px var(--black) solid;
+        }
+
+        #menu input[type="text"]:focus {
+            animation: fadeOut 0.3s;
+            border: 1px var(--white) solid;
+            opacity: 0.7;
+        }
+
+        #menu input[type="text"] {
+            animation: fadeOut 0.3s;
+            border: 1px var(--white) solid;
+            opacity: 0.7;
+        }
+
+/* MAIN */
+
+    #contenido_principal {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+/* FOOTER */
+
+    #informacion_final {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* DERECHOS DE LA PÁGINA */
+
+        #informacion_final {
+            width: 100%;
+            height: 100px;
+            color: var(--white);
+            background-color: var(--red);
+            font-style: italic;
+        }
+
+@keyframes fadeIn {
+    from {
+       opacity: 0.7; 
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+       opacity: 1; 
+    }
+    to {
+        opacity: 0.7;
+    }
+}
