@@ -82,8 +82,20 @@ body {
     /* MENU HAMBURGUESA */
 
     #menu_hamburguesa {
-        width: 75px;
-        height: 75px;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    #menu_hamburguesa span {
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        background-color: var(--white);
     }
 
 /* MAIN */
@@ -91,7 +103,6 @@ body {
     #contenido_principal {
         width: 100%;
         height: 100%;
-        
     }
 
 /* FOOTER */
